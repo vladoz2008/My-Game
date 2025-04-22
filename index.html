@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Своя игра: IT Top</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="main-container">
+        <img src="https://leader-id.storage.yandexcloud.net/upload/2201763/5dd2cc87-540b-4d52-9050-386789c24864.jpg" alt="IT Top College Logo" class="logo">
+        <h1>Своя игра: IT Top</h1>
+        <div class="button-container">
+            <button class="theme-btn rpo-btn" onclick="startGame('RPO')">Разработка ПО</button>
+            <button class="theme-btn design-btn" onclick="startGame('Dizain')">Дизайн</button>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS('particles-js', {
+            particles: {
+                number: { value: 80, density: { enable: true, value_area: 800 } },
+                color: { value: '#B2E8E2' },
+                shape: { type: 'circle' },
+                opacity: { value: 0.5, random: true },
+                size: { value: 3, random: true },
+                move: { enable: true, speed: 2, direction: 'none', random: true, out_mode: 'out' }
+            },
+            interactivity: {
+                detect_on: 'canvas',
+                events: { onhover: { enable: true, mode: 'repulse' }, onclick: { enable: true, mode: 'push' } },
+                modes: { repulse: { distance: 100, duration: 0.4 }, push: { particles_nb: 4 } }
+            }
+        });
+    </script>
+    <script src="scripts.js"></script>
+</body>
+</html>
